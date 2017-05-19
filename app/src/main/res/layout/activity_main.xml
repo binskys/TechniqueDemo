@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:benny="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:src="@mipmap/ic_launcher" />
+
+    <com.benny.technique.view.InputView
+        android:id="@+id/inputView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        benny:src_iv="@mipmap/ic_alipay"
+        benny:visibility_iv="true"
+        benny:visibility_et="true"
+        benny:enabled="false" />
+    <com.benny.technique.view.RefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+        <ListView
+            android:id="@+id/lv_project"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#fff"
+            android:dividerHeight="2dp" />
+    </com.benny.technique.view.RefreshLayout>
+
+</LinearLayout>

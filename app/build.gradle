@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'//配置butterknife框架必加（build.gradle还有一行代码）
+apply plugin: 'org.greenrobot.greendao'
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "com.benny.technique"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    //要使用官方数据框架只要配置下面的了
+    dataBinding {
+        enabled = true
+    }
+    //要使用官方数据框架只要配置上面的了
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.jakewharton:butterknife:8.5.1'//配置butterknife框架必加（build.gradle还有一行代码）
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'//配置butterknife框架必加（build.gradle还有一行代码）
+
+    compile 'com.lzy.net:okgo:2.1.4'        //网络开源框架
+
+    compile 'jp.wasabeef:picasso-transformations:2.1.0'
+    // If you want to use the GPU Filters
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+
+    compile 'org.greenrobot:greendao:3.2.0'
+
+}
+greendao {
+    schemaVersion 1//数据库版本号
+    daoPackage 'com.benny.technique.greendao'//设置DaoMaster、DaoSession、Dao包名
+    targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+
+
+}

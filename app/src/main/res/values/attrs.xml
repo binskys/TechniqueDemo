@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--HProgressBarLoading-->
+    <declare-styleable name="hprogress">
+        <attr name="progress" format="integer"/>
+        <attr name="max" format="integer"/>
+        <attr name="progressHeight" format="integer"/>
+        <attr name="progressColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputStyleable">
+        <attr name="textColor_tv" format="color" />
+        <attr name="textColor_et" format="color" />
+
+        <attr name="textColorHint_tv" format="color" />
+        <attr name="textColorHint_et" format="color" />
+
+        <attr name="size_tv" format="integer" />
+        <attr name="size_et" format="integer" />
+
+        <attr name="text_tv" format="string" />
+        <attr name="text_et" format="string" />
+
+        <attr name="textHint_tv" format="string" />
+        <attr name="textHint_et" format="string" />
+
+        <attr name="src_iv" format="integer" />
+
+        <attr name="background_ll" format="color" />
+        <attr name="background_et" format="color" />
+        <attr name="background_iv" format="color" />
+        <attr name="background_tv" format="color" />
+
+        <attr name="visibility_iv" format="boolean" />
+        <attr name="visibility_et" format="boolean" />
+
+        <attr name="enabled" format="boolean" />
+
+        <attr name="isdivider" format="boolean" />
+
+        <attr name="tv_gravity" format="integer" />
+        <attr name="et_gravity" format="integer" />
+
+    </declare-styleable>
+</resources>

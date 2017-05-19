@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">常用开发框架</string>
+    <string name="add">增加</string>
+    <string name="search">查找</string>
+    <string name="del">删除</string>
+    <string name="upload">更新</string>
+    <string name="user">姓名</string>
+    <string name="age">年龄</string>
+    <string name="load">加载中···</string>
+</resources>

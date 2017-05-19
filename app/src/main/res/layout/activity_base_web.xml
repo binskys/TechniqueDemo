@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yangzhe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_basic_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.WebBaseActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+    />
+    <!--整体相对布局,覆盖于顶部-->
+    <com.benny.technique.view.progressbar.HProgressBarLoading
+        android:id="@+id/top_progress"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        yangzhe:max="100"
+        yangzhe:progressColor="#0AC416"
+        yangzhe:progressHeight="8"
+    />
+    <TextView
+        android:id="@+id/tv_center_badnet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="轻触屏幕重新加载"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+</RelativeLayout>
