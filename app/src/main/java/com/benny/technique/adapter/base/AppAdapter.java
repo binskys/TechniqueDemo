@@ -9,8 +9,6 @@ import android.widget.BaseAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
-
 /**
  * 功能描述：所有Adapter都可以直接继承AppAdapter
  * Created by benny on 2016/5/7.

@@ -1,8 +1,5 @@
 package com.benny.technique.model;
 
-import android.os.Parcel;
-import android.os.Parcelable;
-
 /**
  * Created by benny .
  * Time on 2017/3/2 .

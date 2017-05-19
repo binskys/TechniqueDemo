@@ -4,17 +4,12 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 
-import com.benny.technique.greendao.DaoMaster;
 import com.benny.technique.greendao.DaoSession;
 import com.benny.technique.greendao.GreenDaoManager;
-import com.benny.technique.utils.ConfigUtisl;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
 import com.lzy.okgo.cookie.store.PersistentCookieStore;
-import com.lzy.okgo.model.HttpHeaders;
-
-import org.greenrobot.greendao.database.Database;
 
 import java.util.Collections;
 import java.util.LinkedList;

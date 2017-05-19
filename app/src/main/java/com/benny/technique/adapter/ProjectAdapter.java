@@ -5,9 +5,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.benny.technique.MainActivity;
-import com.benny.technique.model.ProjectModel;
 import com.benny.technique.R;
 import com.benny.technique.adapter.base.AppAdapter;
+import com.benny.technique.model.ProjectModel;
 
 import java.util.List;
 

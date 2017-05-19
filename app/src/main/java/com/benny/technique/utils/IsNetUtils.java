@@ -3,7 +3,6 @@ package com.benny.technique.utils;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.util.TypedValue;
 
 /**
  * Created by benny .
